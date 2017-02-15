@@ -74,23 +74,12 @@ public class UseMyBigDecimal {
 
 	
 
-	//System.out.println("Would you like to add or subtract " + firstNumberToUse + " & " + secondNumberToUse + "?");
-	//addOrSub = myScanner.nextLine();
-	//Calls add or subtract method based on user input. If user input is not add or subtract, prompts the user for re-entry.
-	//if(addOrSub.equalsIgnoreCase("add")) {
-		//System.out.println("Addition selected");
+
 		System.out.println("Answer of sum: " + object.addOp(firstNumberToUse, secondNumberToUse));
 		System.out.println("Answer of difference: " + object.subOp(firstNumberToUse, secondNumberToUse));
-		//System.out.println("The output when arraylist 1 is converted to String is " + object.printArrayLists());
-		 
-	//} else if(addOrSub.equalsIgnoreCase("subtract")) {
-		//System.out.println("Subtraction selected");
-		//System.out.println("Answer of difference: " + object.subOp(firstNumberToUse, secondNumberToUse));
 		
-	//} else {
-	//	System.out.println("Invalid operation input, please type in add or subtract. Capitalization does not matter");
-
-	//}
+		 
+	
 
 
 
