@@ -16,8 +16,7 @@ public class UseMyBigDecimal {
 	
 
 	public static void main (String [] args) {
-		/* Created two booleans to check whether or not the String entered is a number with only digits of 0-9 with only 1 '.'.
-	   	    Also created 2 counters to make sure each String entered had no more than one decimal.
+		/* Created a MyBigDecimal object that implemented NumericalOperand.java. We do not need to extend MyBigDecimal because of this
 		*/
 
 
