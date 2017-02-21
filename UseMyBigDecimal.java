@@ -1,3 +1,4 @@
+//Ali Mohammadian CSC 202 Assignment 1
 import java.io.*;
 import java.util.Scanner;
 import java.util.*;
@@ -16,12 +17,10 @@ public class UseMyBigDecimal {
 	
 
 	public static void main (String [] args) {
-		/* Created a MyBigDecimal object that implemented NumericalOperand.java. We do not need to extend MyBigDecimal because of this
-		*/
 
-
-
+		//Create a object for MyBigDecimal class that implemented NumericalOperand interface methods add(object) and subtract(object) and used them
 	   	MyBigDecimal object = new MyBigDecimal();
+	   	
 		
 		while(correctNumberEntered == false) {
 		// If user entry fails, and more than one decimal inputted, resets # for counter to 0 again for next try.
@@ -68,19 +67,21 @@ public class UseMyBigDecimal {
 		}
 	}
 
-	System.out.println("Your first number is " + firstNumberToUse);
-	System.out.println("Your second number is " + secondNumberToUse);
+		//Methods we call below are SEPARATE from the add() and subtract() methods we implemented. They serve the purpose of deriving the answer, the ones 
+		// we call below serve the purpose of obtaining that answer and returning it via its own custom toString method.
+		object.addOp(firstNumberToUse, secondNumberToUse);
+		object.subOp(firstNumberToUse, secondNumberToUse);
+		//Addition works, 
 
-	
-
-
-		System.out.println("Answer of sum: " + object.addOp(firstNumberToUse, secondNumberToUse));
-		System.out.println("Answer of difference: " + object.subOp(firstNumberToUse, secondNumberToUse));
+		//Our object's add/sub method (implemented from interface given, utilise the added method of addOp and subOp we called above, 
+		//and return the answer value for respective sum/difference of NumericalOperand object, which has a toString method that returns the answers the user sees below
+		//
+		object.add(object);
+		System.out.println(object.subtract(object));
+		//We use both add() and subtract() from our NumericalOperand interface we implemented in MyBigDecimal.java, but since
+		// we are returning the object as a toString with both our results in one toString (design request by professor), we 
+		// only display calling the object once, (No need to show results twice) after we call the add(object) method, we call subtract(object) method 
+		// and display both of our results as one message to user. 
 		
-		 
-	
-
-
-
 	}
 }
